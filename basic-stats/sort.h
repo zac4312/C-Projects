@@ -1,0 +1,2 @@
+double* sort(double n[]);
+

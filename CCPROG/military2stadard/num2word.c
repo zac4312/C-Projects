@@ -1,7 +1,7 @@
 char* ones2word(int ones)
 {
 
-    char* num1;
+    char* num1 = "";
 
     switch (ones) {
        case 1:
@@ -11,25 +11,28 @@ char* ones2word(int ones)
             num1 = "Two";
             break;
        case 3:
-            num1 = " Three";
+            num1 = "Three";
             break;
        case 4:
-            num1 = " Four";
+            num1 = "Four";
             break;
        case 5:
-            num1 = " Five";
+            num1 = "Five";
             break;
        case 6:
-            num1 = " Six";
+            num1 = "Six";
             break;
        case 7:
-            num1 = " Seven";
+            num1 = "Seven";
             break;
        case 8:
-            num1 = " Eight";
+            num1 = "Eight";
             break;
        case 9:
-            num1 = " Nine";
+            num1 = "Nine";
+            break;
+       case 12:
+            num1 = "Twelve";
             break;
     }
 
@@ -38,7 +41,7 @@ char* ones2word(int ones)
 
 char* teens2word(int teens) 
 {
-    char* num2;
+    char* num2 = "";
     switch (teens) { 
        case 11:
             num2 = "Eleven";
@@ -75,11 +78,11 @@ char* teens2word(int teens)
 char* tens2word(int tens) 
 {
 
-   char* num3; 
+   char* num3 = "";
 
     switch (tens) {
         case 0: 
-            num3 = "Clock";
+            num3 = "o'Clock";
             break;
         case 10:
             num3 = "Ten";
@@ -100,4 +103,3 @@ char* tens2word(int tens)
 
    return num3;
 }
-
